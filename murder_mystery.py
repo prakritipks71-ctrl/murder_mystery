@@ -293,7 +293,7 @@ def accuse_suspect(game_data, accused_index):
 
     game_data["accusations_made"] += 1
     if game_data["accusations_made"] >= game_data["max_accusations"]:
-        game_data["detective_score"] -= 50
+        game_data["detective_score"] = max(0, game_data["detective_score"] - 50)
 
         return {
             "outcome": "lost",
