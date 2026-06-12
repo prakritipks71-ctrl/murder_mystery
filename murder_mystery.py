@@ -934,7 +934,7 @@ def render_murderer_reveal(game_data):
     st.markdown(
         f"""
         <div class='stat-tile'><div class='stat-title'>Final Score</div><div class='stat-value'>{game_data['detective_score']} XP</div></div>
-        <div class='stat-tile'><div class='stat-title'>Clues Discovered</div><div class='stat-value'>{len(game_data['clues']) if game_data['clues_viewed'] else 0}/{len(game_data['clues'])}</div></div>
+        <div class='stat-tile'><div class='stat-title'>Clues Discovered</div><div class='stat-value'>{game_data['clues_found']}/{len(game_data['clues'])}</div></div>
         <div class='stat-tile'><div class='stat-title'>Accusations Used</div><div class='stat-value'>{game_data['accusations_made']}/{game_data['max_accusations']}</div></div>
         """,
         unsafe_allow_html=True,
