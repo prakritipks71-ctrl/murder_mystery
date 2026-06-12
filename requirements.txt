@@ -1,5 +1,1 @@
 streamlit
-
-https://murdermystery-cfzk7khgnagedvmhouh7tm.streamlit.app/
-
-"Link for the Murder Mystery Game."
